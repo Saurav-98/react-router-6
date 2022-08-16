@@ -1,18 +1,20 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const About = () => {
+const Navbar = () => {
   return (
-    <section className="section">
-      <h1>About Page</h1>
+    <nav className="section">
       <Link to="/" className="btn">
         Home
+      </Link>
+      <Link to="/about" className="btn">
+        About
       </Link>
       <Link to="/products" className="btn">
         Products
       </Link>
-    </section>
+    </nav>
   );
 };
 
-export default About;
+export default Navbar;
